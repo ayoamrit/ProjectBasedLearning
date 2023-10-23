@@ -8,13 +8,9 @@ namespace BattleSelect.Player
 {
     public class Character
     {
-        public static Random random = new Random();
-        public void startGame()
-        {
-            Console.WriteLine("Start Fighting Now:");
-        }
+        private Random random = new Random();
 
-        public static int getDamage(int minDamage, int maxDamage)
+        public int getDamage(int minDamage, int maxDamage)
         {
             return random.Next(minDamage, maxDamage);
         }
