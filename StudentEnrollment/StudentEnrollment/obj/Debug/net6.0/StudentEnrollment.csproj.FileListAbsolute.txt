@@ -1,0 +1,14 @@
+D:\C#\StudentEnrollment\StudentEnrollment\bin\Debug\net6.0\StudentEnrollment.exe
+D:\C#\StudentEnrollment\StudentEnrollment\bin\Debug\net6.0\StudentEnrollment.deps.json
+D:\C#\StudentEnrollment\StudentEnrollment\bin\Debug\net6.0\StudentEnrollment.runtimeconfig.json
+D:\C#\StudentEnrollment\StudentEnrollment\bin\Debug\net6.0\StudentEnrollment.dll
+D:\C#\StudentEnrollment\StudentEnrollment\bin\Debug\net6.0\StudentEnrollment.pdb
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\StudentEnrollment.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\StudentEnrollment.AssemblyInfoInputs.cache
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\StudentEnrollment.AssemblyInfo.cs
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\StudentEnrollment.csproj.CoreCompileInputs.cache
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\StudentEnrollment.dll
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\refint\StudentEnrollment.dll
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\StudentEnrollment.pdb
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\StudentEnrollment.genruntimeconfig.cache
+D:\C#\StudentEnrollment\StudentEnrollment\obj\Debug\net6.0\ref\StudentEnrollment.dll
