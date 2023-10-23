@@ -1,0 +1,14 @@
+D:\C#\BattleSelect\BattleSelect\bin\Debug\net6.0\BattleSelect.exe
+D:\C#\BattleSelect\BattleSelect\bin\Debug\net6.0\BattleSelect.deps.json
+D:\C#\BattleSelect\BattleSelect\bin\Debug\net6.0\BattleSelect.runtimeconfig.json
+D:\C#\BattleSelect\BattleSelect\bin\Debug\net6.0\BattleSelect.dll
+D:\C#\BattleSelect\BattleSelect\bin\Debug\net6.0\BattleSelect.pdb
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\BattleSelect.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\BattleSelect.AssemblyInfoInputs.cache
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\BattleSelect.AssemblyInfo.cs
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\BattleSelect.csproj.CoreCompileInputs.cache
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\BattleSelect.dll
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\refint\BattleSelect.dll
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\BattleSelect.pdb
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\BattleSelect.genruntimeconfig.cache
+D:\C#\BattleSelect\BattleSelect\obj\Debug\net6.0\ref\BattleSelect.dll
