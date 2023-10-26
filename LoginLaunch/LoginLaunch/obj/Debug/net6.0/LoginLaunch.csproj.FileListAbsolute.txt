@@ -1,0 +1,4 @@
+D:\C#\LoginLaunch\LoginLaunch\obj\Debug\net6.0\LoginLaunch.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LoginLaunch\LoginLaunch\obj\Debug\net6.0\LoginLaunch.AssemblyInfoInputs.cache
+D:\C#\LoginLaunch\LoginLaunch\obj\Debug\net6.0\LoginLaunch.AssemblyInfo.cs
+D:\C#\LoginLaunch\LoginLaunch\obj\Debug\net6.0\LoginLaunch.csproj.CoreCompileInputs.cache
