@@ -3,24 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LoginLaunch.DatabaseConnect;
 using LoginLaunch.ValidateInput;
+using LoginLaunch.CustomException;
 
 namespace LoginLaunch.UserPrompt
 {
     public class Prompt
     {
-
+        private static DataManager dataManager = new DataManager();
         protected Validate validate = new Validate();
-        //public bool checkExistence();
-
-        protected bool checkEmailInJson(string email)
+ 
+        protected bool checkEmailInDatabase(string email)
         {
-            return false;
+            
+            string query = dataManager.generateQuery("email", email);
+
+            if (dataManager.checkDataInDatabase(query))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
-        protected string getPasswordFromJson(string email)
+        protected string getPasswordFromDatabase(string email)
         {
-            return "Amrit";
+            string query = dataManager.generateQuery("password", email);
+            string password = dataManager.getDataFromDatabase(query);
+
+            return password;
         }
     }
 }

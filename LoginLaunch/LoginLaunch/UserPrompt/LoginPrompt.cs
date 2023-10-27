@@ -21,7 +21,7 @@ namespace LoginLaunch.UserPrompt
                 this.email = getEmail();
 
                 //check if the email exists in JSON file
-                if (checkEmailInJson(this.email))
+                if (checkEmailInDatabase(this.email))
                 {
 
                     //retrieve and set the password associated with the email
@@ -63,6 +63,11 @@ namespace LoginLaunch.UserPrompt
                 Console.WriteLine(e.Message);
                 return false;
             }
+            catch (FetchDataFromDatabaseException e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
             catch (Exception)
             {
                 Console.WriteLine("***An unexpected error occurred");
@@ -85,7 +90,7 @@ namespace LoginLaunch.UserPrompt
         public void setPassword(string email)
         {
             //retrieve and set the password associated with the given email
-            this.password = getPasswordFromJson(email);
+            this.password = getPasswordFromDatabase(email);
         }
     }
 }
