@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoginLaunch.UserAccount;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -51,6 +52,27 @@ namespace LoginLaunch.DatabaseConnect
         public string generateQuery(string selectedValue,string value)
         {
             return $"select {selectedValue} from userInformation where email = '{value}'";
+        }
+
+        public Account insertUserInformation(string value)
+        {
+            string query = generateQuery("*", value);
+            SqlCommand sqlCommand = getCommand(query);
+            SqlDataReader reader = getDataReader(sqlCommand);
+
+            string firstname = string.Empty;
+            string lastname = string.Empty;
+            string email = value;
+            string[] hobbies = new string[10];
+
+            while (reader.Read())
+            {
+                firstname = reader["firstname"].ToString();
+                lastname = reader["lastname"].ToString();
+                hobbies = reader["hobbies"].ToString().Split(",");
+            }
+
+            return new Account(firstname, lastname, email, hobbies);
         }
     }
 }

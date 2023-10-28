@@ -1,19 +1,25 @@
 ﻿using LoginLaunch.DatabaseConnect;
+using LoginLaunch.UserAccount;
 using LoginLaunch.UserPrompt;
 using System;
 
 namespace LoginLaunch { 
 
-    public class Program { 
+    public class Program {
+
+        static LoginPrompt loginPrompt = new LoginPrompt();
+        static DataManager dataManager = new DataManager();
+        static Account? account;
 
         public static void Main(string[] args)
         {
-            try
+            bool flag = new LoginPrompt().Login();
+            string? email = LoginPrompt.email;
+
+            if (flag)
             {
-                new LoginPrompt().Login();
-            }catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
+                account = dataManager.insertUserInformation(email);
+                Console.WriteLine(account.ToString());
             }
         }    
     }

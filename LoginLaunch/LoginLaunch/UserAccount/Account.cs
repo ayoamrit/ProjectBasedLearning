@@ -28,7 +28,7 @@ namespace LoginLaunch.UserAccount
         public override string ToString()
         {
             //return a formatted string
-            return $"Firstname: {firstname} \nLastname: {lastname} \nEmail: {email} \nHobbies: {hobbies.ToString}";
+            return $"Firstname: {firstname} \nLastname: {lastname} \nEmail: {email} \nHobbies: {string.Join(",", hobbies)}";
         }
     }
 }

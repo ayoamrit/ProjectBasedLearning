@@ -10,7 +10,7 @@ namespace LoginLaunch.UserPrompt
 {
     public class LoginPrompt : Prompt
     {
-        private string? email { get; set; }
+        public static string? email { get; set; }
         private string password { get; set; } = string.Empty;
 
         public bool Login()
@@ -18,14 +18,14 @@ namespace LoginLaunch.UserPrompt
             try
             {
                 //get the email from user input
-                this.email = getEmail();
+                email = getEmail();
 
                 //check if the email exists in JSON file
-                if (checkEmailInDatabase(this.email))
+                if (checkEmailInDatabase(email))
                 {
 
                     //retrieve and set the password associated with the email
-                    setPassword(this.email);
+                    setPassword(email);
 
                     //get the user's entered password
                     string confirmPassword = getPassword();
@@ -45,7 +45,7 @@ namespace LoginLaunch.UserPrompt
                 else
                 {
                     //email not found in JSON, throw an exception
-                    throw new AccountDoesNotExist($"***Account associated with {this.email} does not exist");
+                    throw new AccountDoesNotExist($"***Account associated with {email} does not exist");
                 }
 
             }catch(EmptyOrNullString e){
