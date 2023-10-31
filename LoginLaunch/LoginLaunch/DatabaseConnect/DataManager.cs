@@ -56,15 +56,23 @@ namespace LoginLaunch.DatabaseConnect
 
         public Account insertUserInformation(string value)
         {
+
+            //Generate a query to select userInformation using the value parameter
             string query = generateQuery("*", value);
+
+            //Create a sqlCommand using the generated query
             SqlCommand sqlCommand = getCommand(query);
+
+            //Execute the query and obtain a sqlDataReader for reading the results 
             SqlDataReader reader = getDataReader(sqlCommand);
 
+            //Initialize variables to store user information
             string firstname = string.Empty;
             string lastname = string.Empty;
             string email = value;
             string[] hobbies = new string[10];
 
+            //Read user information from the database
             while (reader.Read())
             {
                 firstname = reader["firstname"].ToString();
@@ -72,6 +80,7 @@ namespace LoginLaunch.DatabaseConnect
                 hobbies = reader["hobbies"].ToString().Split(",");
             }
 
+            //create and return an account object with the obtained user data
             return new Account(firstname, lastname, email, hobbies);
         }
     }

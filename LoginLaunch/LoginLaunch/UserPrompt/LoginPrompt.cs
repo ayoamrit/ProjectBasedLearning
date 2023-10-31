@@ -77,12 +77,14 @@ namespace LoginLaunch.UserPrompt
 
         public string getEmail()
         {
+            Console.Write("Email: ");
             //prompt and get the email from the user
             return validate.getString();
         }
 
         public string getPassword()
         {
+            Console.Write("Password: ");
             //prompt and get the password from the user
             return validate.getString();
         }
