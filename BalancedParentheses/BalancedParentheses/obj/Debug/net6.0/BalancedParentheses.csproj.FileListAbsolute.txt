@@ -1,0 +1,14 @@
+D:\C#\BalancedParentheses\BalancedParentheses\bin\Debug\net6.0\BalancedParentheses.exe
+D:\C#\BalancedParentheses\BalancedParentheses\bin\Debug\net6.0\BalancedParentheses.deps.json
+D:\C#\BalancedParentheses\BalancedParentheses\bin\Debug\net6.0\BalancedParentheses.runtimeconfig.json
+D:\C#\BalancedParentheses\BalancedParentheses\bin\Debug\net6.0\BalancedParentheses.dll
+D:\C#\BalancedParentheses\BalancedParentheses\bin\Debug\net6.0\BalancedParentheses.pdb
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\BalancedParentheses.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\BalancedParentheses.AssemblyInfoInputs.cache
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\BalancedParentheses.AssemblyInfo.cs
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\BalancedParentheses.csproj.CoreCompileInputs.cache
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\BalancedParentheses.dll
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\refint\BalancedParentheses.dll
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\BalancedParentheses.pdb
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\BalancedParentheses.genruntimeconfig.cache
+D:\C#\BalancedParentheses\BalancedParentheses\obj\Debug\net6.0\ref\BalancedParentheses.dll
