@@ -21,18 +21,18 @@ namespace Program
         private static bool isBalanced(string str)
         {
 
-            for(int x = 0; x < str.Length; x++)
+            for (int x = 0; x < str.Length; x++)
             {
                 char c = str[x];
 
-                if(c == '[' || c == '{' || c == '(')
+                if (c == '[' || c == '{' || c == '(')
                 {
                     //push the opening brackets into the stack
                     stack.push(c);
                 }
-                else if(c == ']')
+                else if (c == ']')
                 {
-                    if(stack.peek() != '[')
+                    if (stack.peek() != '[')
                     {
 
                         //if the stack top does not match the current closing brackets, it's unbalanced
@@ -44,9 +44,9 @@ namespace Program
                         stack.pop();
                     }
                 }
-                else if(c== '}')
+                else if (c == '}')
                 {
-                    if(stack.peek() != '{')
+                    if (stack.peek() != '{')
                     {
                         return false;
                     }
@@ -57,7 +57,7 @@ namespace Program
                 }
                 else if (c == ')')
                 {
-                    if(stack.peek() != '(')
+                    if (stack.peek() != '(')
                     {
                         return false;
                     }
