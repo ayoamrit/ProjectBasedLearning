@@ -11,14 +11,16 @@ namespace TicTacToe.Player
     {
         //represent the button assigned to the computer, either 'O' or 'X'
         private char computer { get; set; }
-        protected Validate validate;
 
         public Computer()
         {
+
+            //initialize the player character as 'O' by default
             this.computer = 'X';
-            this.validate = new Validate();
+
         }
 
+        //function to get computer's symbol
         public char getComputer()
         {
             return computer;

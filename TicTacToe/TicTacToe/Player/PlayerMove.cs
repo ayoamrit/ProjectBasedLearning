@@ -11,6 +11,7 @@ namespace TicTacToe.Player
 {
     public class PlayerMove : Player
     {
+        //function to get the player's move
         public int getMove()
         {
             Console.Write("Place Your Symbol: ");
@@ -18,10 +19,12 @@ namespace TicTacToe.Player
 
             if (validate.isValueValid(userInput))
             {
+                //if the user input is valid, convert it to an integer and return
                 return Convert.ToInt32(userInput);
             }
             else
             {
+                //if the input is not valid
                 return 0;
             }
         }

@@ -9,11 +9,13 @@ namespace TicTacToe.Game
     public class GameBoard
     {
 
-        public static char[,] gameBoard = new char[5,5];
+        public char[,] board = new char[5,5];
 
+
+        //Constructor to initialize the game board with empty spaces and lines
         public GameBoard()
         {
-            gameBoard = new char[,]
+            board = new char[,]
             {
                 {' ','|',' ','|',' ' },
                 { '-','-','-','-','-'},
@@ -23,13 +25,14 @@ namespace TicTacToe.Game
             };
         }
 
+        //function to display the current state of the game board
         public void display()
         {
-            for(int x = 0; x < gameBoard.GetLength(0); x++)
+            for(int x = 0; x < board.GetLength(0); x++)
             {
-                for(int y = 0; y < gameBoard.GetLength(1); y++)
+                for(int y = 0; y < board.GetLength(1); y++)
                 {
-                    Console.Write(gameBoard[x, y]);
+                    Console.Write(board[x, y]);
                 }
 
                 Console.WriteLine();  //leaving a line for better formatting
