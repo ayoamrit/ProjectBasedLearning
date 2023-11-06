@@ -10,7 +10,6 @@ namespace TicTacToe.Game
 {
     public class Validate
     {
-
         //function to check if a number i within a specified range
         public bool inRange(int number, int min, int max)
         {

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using TicTacToe.CustomException;
 using TicTacToe.Game;
 using TicTacToe.Player;
-
+using TicTacToe.Game.ActionHandler;
 //Abstract class is a class that cannot be initiated in any other class.
 //It is more like an incomplete class that you don't want anybody to access.
 abstract class Program
@@ -17,7 +17,9 @@ abstract class Program
     private static PlayerMove? playerMove;
     private static ComputerMove? computerMove;
     private static WinnerHandler? winnerHandler;
+    private static Stack? stack;
     private static bool alive = true;
+    private static int totalPossibleMoves = 10;
 
     //main method 
     public static void Main(string[] args)
@@ -30,6 +32,7 @@ abstract class Program
         validate = new Validate();
         computerMove = new ComputerMove();
         winnerHandler = new WinnerHandler();
+        stack = new Stack(totalPossibleMoves);
 
         //display the initial game board
         gameBoard.display();
