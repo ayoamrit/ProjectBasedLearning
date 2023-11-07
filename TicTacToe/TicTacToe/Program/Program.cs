@@ -17,6 +17,7 @@ abstract class Program
     private static PlayerMove? playerMove;
     private static ComputerMove? computerMove;
     private static WinnerHandler? winnerHandler;
+    private static ActionHandler? actionHandler;
     private static Stack? stack;
     private static bool alive = true;
     private static int totalPossibleMoves = 10;
@@ -33,6 +34,12 @@ abstract class Program
         computerMove = new ComputerMove();
         winnerHandler = new WinnerHandler();
         stack = new Stack(totalPossibleMoves);
+        actionHandler = new ActionHandler(stack, validate, gameBoard.board);
+
+        //Instructions
+        Console.WriteLine("Enter 10 to undo a move");
+        Console.WriteLine();
+        
 
         //display the initial game board
         gameBoard.display();
@@ -45,66 +52,88 @@ abstract class Program
                 //Get the position selected by the player
                 int playerSelectedPosition = playerMove.getMove();
 
-                if (validate.isPositionEmpty(gameBoard.board, playerSelectedPosition))
+                if(playerSelectedPosition == 10)
                 {
-                    //If the position is empty, allow the player to make a move
-                    validate.performAction(gameBoard.board, playerSelectedPosition, player.getPlayer());
+                    //Perform an undo move if the player selects position 10
+                    actionHandler.undoMove();
                 }
                 else
                 {
-                    //if the position is not empty, throw  a custom exception
-                    throw new PositionNotEmptyException(playerSelectedPosition);
-                }
-
-
-                //check if the player has won the game
-                if(winnerHandler.checkWinner(gameBoard.board, player.getPlayer()))
-                {
-                    Console.WriteLine("***Player Won");
-                    alive = false;  //end the game loop
-                    break;
-                }
-
-                //Add a delay to make the game more interactive
-                Thread.Sleep(500);
-
-                //Initialize a flag for computer's turn
-                bool flag = true;
-                while (flag)
-                {
-                    //Get the position selected by the computer
-                    int computerSelectedPosition = computerMove.getMove();
-
-  
-                    if (validate.isPositionEmpty(gameBoard.board, computerSelectedPosition))
+                    if (validate.isPositionEmpty(gameBoard.board, playerSelectedPosition))
                     {
-                        //If the position is empty, allow the computer to make a move
-                        validate.performAction(gameBoard.board, computerSelectedPosition, computer.getComputer());
+                        //If the position is empty, allow the player to make a move
+                        validate.performAction(gameBoard.board, playerSelectedPosition, player.getPlayer());
 
-                        //exit the loop
-                        flag = false;
+                        //Push the player's move to stack
+                        actionHandler.pushToStack(playerSelectedPosition);
                     }
                     else
                     {
-                        //If the position is not empty, generate a new random number to get an empty position
-                        continue;
+                        //if the position is not empty, throw  a custom exception
+                        throw new PositionNotEmptyException(playerSelectedPosition);
                     }
-                    
+
+
+                    //check if the player has won the game
+                    if (winnerHandler.checkWinner(gameBoard.board, player.getPlayer()))
+                    {
+                        Console.WriteLine("***Player Won");
+                        alive = false;  //end the game loop
+                        break;
+                    }
+
+                    //Add a delay to make the game more interactive
+                    Thread.Sleep(500);
+
+                    //Initialize a flag for computer's turn
+                    bool flag = true;
+                    while (flag)
+                    {
+                        //Get the position selected by the computer
+                        int computerSelectedPosition = computerMove.getMove();
+
+
+                        if (validate.isPositionEmpty(gameBoard.board, computerSelectedPosition))
+                        {
+                            //If the position is empty, allow the computer to make a move
+                            validate.performAction(gameBoard.board, computerSelectedPosition, computer.getComputer());
+
+                            //push the computer's move to stack
+                            actionHandler.pushToStack(computerSelectedPosition);
+
+                            //exit the loop
+                            flag = false;
+                        }
+                        else
+                        {
+                            //If the position is not empty, generate a new random number to get an empty position
+                            continue;
+                        }
+
+                    }
+
+
+                    //check if the computer has won the game
+                    if (winnerHandler.checkWinner(gameBoard.board, computer.getComputer()))
+                    {
+                        Console.WriteLine("***Computer Won");
+                        alive = false; //exit the game loop
+                        break;
+                    }
+
+
                 }
 
 
-                //check if the computer has won the game
-                if(winnerHandler.checkWinner(gameBoard.board, computer.getComputer()))
-                {
-                    Console.WriteLine("***Computer Won");
-                    alive = false; //exit the game loop
-                    break;
-                }
-
-
-            }catch(PositionNotEmptyException e)
+            }
+            catch(PositionNotEmptyException e)
             {
                 //Handle the specific exception when a position is not empty
+                Console.WriteLine(e.Message);
+            }
+            catch(UndoException e)
+            {
+                //Handle the specific exception when the execution of undo function is not possible
                 Console.WriteLine(e.Message);
             }
             catch (Exception)

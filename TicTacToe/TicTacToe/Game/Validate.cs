@@ -47,7 +47,7 @@ namespace TicTacToe.Game
                 isEmptyOrNull(input);
 
                 //call function to check whether the value is within the range or not
-                inRange(Convert.ToInt32(input), 0, 10);
+                inRange(Convert.ToInt32(input), 0, 11);
 
                 return true;
             }
@@ -103,7 +103,7 @@ namespace TicTacToe.Game
         }
 
         //helper function to convert a position number to row and column indices
-        private (int row, int col) getPosition(int position)
+        public (int row, int col) getPosition(int position)
         {
             switch (position)
             {

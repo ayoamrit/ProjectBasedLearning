@@ -23,4 +23,12 @@ namespace TicTacToe.CustomException
 
         }
     }
+
+    public class UndoException : Exception
+    {
+        public UndoException(): base("An error occurred during the undo process")
+        {
+
+        }
+    }
 }
