@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = Model.pageTitle;
+}
+<form method="post">
+    <div class="login-form">
+        <div class="email">
+            <input type="email" required placeholder="Email" />
+        </div>
+        <div class="password">
+            <input type="password" required placeholder="Password" />
+        </div>
+        <div class="login-button">
+            <button>Login</button>
+        </div>
+    </div>
+</form>
+
+@if (!Model.isProcessed)
+{
+<p>Please submit the form to log in.</p>
+}
+else
+{
+<p>Logged in successfully! Email: @Model.Email</p>
+}

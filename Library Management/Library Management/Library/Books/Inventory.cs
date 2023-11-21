@@ -12,7 +12,7 @@ namespace Library_Management.MainLibrary.Books
         
         public Inventory(Book BookInventory)
         {
-            this.BookInventory.Add(BookInventory);
+            this.BookInventory = new List<Book> {BookInventory};
         }
 
         public List<Book> getInventory()

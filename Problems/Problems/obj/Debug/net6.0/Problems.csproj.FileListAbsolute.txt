@@ -1,0 +1,14 @@
+D:\C#\Problems\Problems\bin\Debug\net6.0\Problems.exe
+D:\C#\Problems\Problems\bin\Debug\net6.0\Problems.deps.json
+D:\C#\Problems\Problems\bin\Debug\net6.0\Problems.runtimeconfig.json
+D:\C#\Problems\Problems\bin\Debug\net6.0\Problems.dll
+D:\C#\Problems\Problems\bin\Debug\net6.0\Problems.pdb
+D:\C#\Problems\Problems\obj\Debug\net6.0\Problems.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Problems\Problems\obj\Debug\net6.0\Problems.AssemblyInfoInputs.cache
+D:\C#\Problems\Problems\obj\Debug\net6.0\Problems.AssemblyInfo.cs
+D:\C#\Problems\Problems\obj\Debug\net6.0\Problems.csproj.CoreCompileInputs.cache
+D:\C#\Problems\Problems\obj\Debug\net6.0\Problems.dll
+D:\C#\Problems\Problems\obj\Debug\net6.0\refint\Problems.dll
+D:\C#\Problems\Problems\obj\Debug\net6.0\Problems.pdb
+D:\C#\Problems\Problems\obj\Debug\net6.0\Problems.genruntimeconfig.cache
+D:\C#\Problems\Problems\obj\Debug\net6.0\ref\Problems.dll

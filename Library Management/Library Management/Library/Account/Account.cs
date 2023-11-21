@@ -16,7 +16,7 @@ namespace Library_Management.MainLibrary.Account
         {
             this.Email = Email;
             this.Password = Password;
-            this.borrowedBooks.Add(borrowedBooks);
+            this.borrowedBooks = new List<BorrowedBooks> {borrowedBooks};
         }
 
         public string getEmail()
