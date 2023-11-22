@@ -1,4 +1,7 @@
 ﻿using Problems.Solution;
+using Problems.Sorting;
+using System.Data;
+
 namespace Problems
 {
     internal class Program
@@ -10,9 +13,12 @@ namespace Problems
         static SquareRoot? squareRoot;
         static MergeSorted? mergeSorted;
 
+        static BubbleSort? bubbleSort;
+        static QuickSort? quickSort;
+
         private static void Main(string[] args)
         {
-            mergeSorted = new MergeSorted();
+            quickSort = new QuickSort();
         }
     }
 }

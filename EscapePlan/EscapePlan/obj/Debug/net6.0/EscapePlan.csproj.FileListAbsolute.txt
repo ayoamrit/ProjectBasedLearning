@@ -1,0 +1,14 @@
+D:\C#\EscapePlan\EscapePlan\bin\Debug\net6.0\EscapePlan.exe
+D:\C#\EscapePlan\EscapePlan\bin\Debug\net6.0\EscapePlan.deps.json
+D:\C#\EscapePlan\EscapePlan\bin\Debug\net6.0\EscapePlan.runtimeconfig.json
+D:\C#\EscapePlan\EscapePlan\bin\Debug\net6.0\EscapePlan.dll
+D:\C#\EscapePlan\EscapePlan\bin\Debug\net6.0\EscapePlan.pdb
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\EscapePlan.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\EscapePlan.AssemblyInfoInputs.cache
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\EscapePlan.AssemblyInfo.cs
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\EscapePlan.csproj.CoreCompileInputs.cache
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\EscapePlan.dll
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\refint\EscapePlan.dll
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\EscapePlan.pdb
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\EscapePlan.genruntimeconfig.cache
+D:\C#\EscapePlan\EscapePlan\obj\Debug\net6.0\ref\EscapePlan.dll
