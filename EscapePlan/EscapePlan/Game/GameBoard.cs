@@ -8,6 +8,7 @@ namespace EscapePlan.Game
 {
     public class GameBoard
     {
+        //Set properties
         private static char[,] gameBoard { get; set; }
         private static int currentPlayerPositionX { get; set; }
         private static int currentPlayerPositionY { get; set; }
@@ -43,6 +44,7 @@ namespace EscapePlan.Game
             validateMove = new ValidateMove();
         }
 
+        //Function to display the current state of the board
         public void DisplayBoard()
         {
             for(int x = 0; x < gameBoard.GetLength(0); x++)
@@ -55,6 +57,7 @@ namespace EscapePlan.Game
             }
         }
 
+        //static method to update the board based on user input
         public static void UpdateBoard(ConsoleKeyInfo keyInfo)
         {
             if(keyInfo.Key == ConsoleKey.Enter)
@@ -102,6 +105,7 @@ namespace EscapePlan.Game
             }
         }
 
+        //private function to update a specific position on the game board
         private static void UpdateMove(int x, int y, char value)
         {
             gameBoard[x, y] = value;

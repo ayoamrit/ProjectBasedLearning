@@ -13,6 +13,7 @@ namespace EscapePlan
 
             while (gameLoop != null)
             {
+                //Get pressed key without displaying it in the console
                 ConsoleKeyInfo keyInfo = Console.ReadKey(intercept: true);
                 GameBoard.UpdateBoard(keyInfo);
             }

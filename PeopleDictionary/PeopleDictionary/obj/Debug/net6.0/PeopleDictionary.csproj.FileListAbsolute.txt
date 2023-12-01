@@ -1,0 +1,14 @@
+D:\C#\PeopleDictionary\PeopleDictionary\bin\Debug\net6.0\PeopleDictionary.exe
+D:\C#\PeopleDictionary\PeopleDictionary\bin\Debug\net6.0\PeopleDictionary.deps.json
+D:\C#\PeopleDictionary\PeopleDictionary\bin\Debug\net6.0\PeopleDictionary.runtimeconfig.json
+D:\C#\PeopleDictionary\PeopleDictionary\bin\Debug\net6.0\PeopleDictionary.dll
+D:\C#\PeopleDictionary\PeopleDictionary\bin\Debug\net6.0\PeopleDictionary.pdb
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\PeopleDictionary.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\PeopleDictionary.AssemblyInfoInputs.cache
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\PeopleDictionary.AssemblyInfo.cs
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\PeopleDictionary.csproj.CoreCompileInputs.cache
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\PeopleDictionary.dll
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\refint\PeopleDictionary.dll
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\PeopleDictionary.pdb
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\PeopleDictionary.genruntimeconfig.cache
+D:\C#\PeopleDictionary\PeopleDictionary\obj\Debug\net6.0\ref\PeopleDictionary.dll

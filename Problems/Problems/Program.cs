@@ -11,14 +11,17 @@ namespace Problems
         static Power? power;
         static Permutation? permutation;
         static SquareRoot? squareRoot;
+        static MaxProfit? maxProfit;
         static MergeSorted? mergeSorted;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
+        static MajorityElement? majorityElement;
+        static HappyNumber? happyNumber;
 
         private static void Main(string[] args)
         {
-            quickSort = new QuickSort();
+            happyNumber = new HappyNumber();
         }
     }
 }

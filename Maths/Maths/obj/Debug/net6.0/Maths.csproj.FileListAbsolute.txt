@@ -1,0 +1,14 @@
+D:\C#\Maths\Maths\bin\Debug\net6.0\Maths.exe
+D:\C#\Maths\Maths\bin\Debug\net6.0\Maths.deps.json
+D:\C#\Maths\Maths\bin\Debug\net6.0\Maths.runtimeconfig.json
+D:\C#\Maths\Maths\bin\Debug\net6.0\Maths.dll
+D:\C#\Maths\Maths\bin\Debug\net6.0\Maths.pdb
+D:\C#\Maths\Maths\obj\Debug\net6.0\Maths.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Maths\Maths\obj\Debug\net6.0\Maths.AssemblyInfoInputs.cache
+D:\C#\Maths\Maths\obj\Debug\net6.0\Maths.AssemblyInfo.cs
+D:\C#\Maths\Maths\obj\Debug\net6.0\Maths.csproj.CoreCompileInputs.cache
+D:\C#\Maths\Maths\obj\Debug\net6.0\Maths.dll
+D:\C#\Maths\Maths\obj\Debug\net6.0\refint\Maths.dll
+D:\C#\Maths\Maths\obj\Debug\net6.0\Maths.pdb
+D:\C#\Maths\Maths\obj\Debug\net6.0\Maths.genruntimeconfig.cache
+D:\C#\Maths\Maths\obj\Debug\net6.0\ref\Maths.dll

@@ -8,6 +8,7 @@ namespace EscapePlan.Game
 {
     public class ValidateMove
     {
+        //Function to check whether the move is possible or not
         public bool CheckMove(char[,] gameBoard, int movePositionX, int movePositionY)
         {
             if (movePositionX < 0 || movePositionX > 19 || movePositionY < 0 || movePositionY > 19)
