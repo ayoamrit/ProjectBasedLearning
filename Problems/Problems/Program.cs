@@ -13,6 +13,7 @@ namespace Problems
         static SquareRoot? squareRoot;
         static MaxProfit? maxProfit;
         static MergeSorted? mergeSorted;
+        static FindMedian? findMedian;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -21,7 +22,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            happyNumber = new HappyNumber();
+            findMedian = new FindMedian();
         }
     }
 }
