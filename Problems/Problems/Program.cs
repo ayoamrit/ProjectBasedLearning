@@ -1,6 +1,6 @@
 ﻿using Problems.Solution;
 using Problems.Sorting;
-using System.Data;
+
 
 namespace Problems
 {
@@ -14,15 +14,17 @@ namespace Problems
         static MaxProfit? maxProfit;
         static MergeSorted? mergeSorted;
         static FindMedian? findMedian;
+        static ConversionArray? conversionArray;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
         static MajorityElement? majorityElement;
         static HappyNumber? happyNumber;
 
+
         private static void Main(string[] args)
         {
-            findMedian = new FindMedian();
+            conversionArray = new ConversionArray();
         }
     }
 }
