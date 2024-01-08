@@ -1,6 +1,6 @@
 ﻿using Problems.Solution;
 using Problems.Sorting;
-
+using System.Data.SqlTypes;
 
 namespace Problems
 {
@@ -15,6 +15,8 @@ namespace Problems
         static MergeSorted? mergeSorted;
         static FindMedian? findMedian;
         static ConversionArray? conversionArray;
+        static GenerateParenthesis? generateParenthesis;
+        static SubstringConcatenation? substringConcatenation;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -24,7 +26,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            conversionArray = new ConversionArray();
+            substringConcatenation = new SubstringConcatenation();
         }
     }
 }
