@@ -1,0 +1,14 @@
+D:\C#\CodeShell\CodeShell\bin\Debug\net6.0\CodeShell.exe
+D:\C#\CodeShell\CodeShell\bin\Debug\net6.0\CodeShell.deps.json
+D:\C#\CodeShell\CodeShell\bin\Debug\net6.0\CodeShell.runtimeconfig.json
+D:\C#\CodeShell\CodeShell\bin\Debug\net6.0\CodeShell.dll
+D:\C#\CodeShell\CodeShell\bin\Debug\net6.0\CodeShell.pdb
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\CodeShell.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\CodeShell.AssemblyInfoInputs.cache
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\CodeShell.AssemblyInfo.cs
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\CodeShell.csproj.CoreCompileInputs.cache
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\CodeShell.dll
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\refint\CodeShell.dll
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\CodeShell.pdb
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\CodeShell.genruntimeconfig.cache
+D:\C#\CodeShell\CodeShell\obj\Debug\net6.0\ref\CodeShell.dll

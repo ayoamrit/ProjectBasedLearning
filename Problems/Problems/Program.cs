@@ -17,6 +17,8 @@ namespace Problems
         static ConversionArray? conversionArray;
         static GenerateParenthesis? generateParenthesis;
         static SubstringConcatenation? substringConcatenation;
+        static SwapNode? swapNode;
+        static FindPosition? findPosition;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -26,7 +28,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            substringConcatenation = new SubstringConcatenation();
+            findPosition = new FindPosition();
         }
     }
 }
