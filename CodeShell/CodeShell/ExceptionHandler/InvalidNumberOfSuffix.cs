@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CodeShell.ExceptionHandler
 {
-    public class DirectoryNotFoundException : IOException
+    public class InvalidNumberOfSuffix : IOException
     {
-        public DirectoryNotFoundException( string directory, string message) : base($"'{directory}': {message}")
+
+        public InvalidNumberOfSuffix(string message): base(message)
         {
-            
+
         }
     }
 }
