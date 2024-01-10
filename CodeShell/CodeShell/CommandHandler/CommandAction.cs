@@ -8,6 +8,17 @@ namespace CodeShell.CommandHandler
 {
     public class CommandAction : CommandList
     {
+        private string _prefix { get; set; }
+        private IList<string> _suffix { get; set; }
+        public string Prefix { get { return _prefix; } }
+        public IList<string> Suffix { get { return _suffix; } }
+
+        public CommandAction()
+        {
+            _prefix = String.Empty;
+            _suffix = new List<string>() { String.Empty };
+        }
+
 
         public bool Validate(string? userCommand)
         {
@@ -28,12 +39,14 @@ namespace CodeShell.CommandHandler
                 //function to check if the userCommand contain correct number of Suffix to execute the command
                 ValidateCommandSuffix(splitUserCommand, commandLocationInList);
 
+                //After the command validation, set the command's prefix and suffix values
+                SetPrefixSuffix(splitUserCommand);
+
                 //return true if userCommand is perfect
                 return true;
             }
-
-
         }
+
 
         //Validate the command prefix (the first part of the userCommand)
         private int ValidateCommandPrefix(string? userCommand)
@@ -63,6 +76,16 @@ namespace CodeShell.CommandHandler
             {
                 //Number of suffixes is invalid, throw an exception
                 throw new ExceptionHandler.InvalidNumberOfSuffix("Command requires valid number of suffix to execute the function");
+            }
+        }
+
+        private void SetPrefixSuffix(string[] splitUserCommand)
+        {
+            _prefix = splitUserCommand[0];
+
+            for(int x = 1; x < splitUserCommand.Length; x++)
+            {
+                _suffix.Add(splitUserCommand[x]);
             }
         }
     }

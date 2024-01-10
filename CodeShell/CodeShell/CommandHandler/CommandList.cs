@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CodeShell.CommandHandler
 {
-    public class CommandList
+    public abstract class CommandList
     {
         //Field to store list of commands
         private List<Command> _commands { get; set; }
@@ -29,6 +29,7 @@ namespace CodeShell.CommandHandler
                 new Command("mkdir", "This command can be used to create new directories/folders.", 1),
                 new Command("touch", "This command can be used to create new files.", 1),
                 new Command("clear", "This command can be used to clear the console.", 0),
+                new Command("history", "This command can be used to the commands that have been used since start of the program", 0),
                 new Command("back", "This command can be used to move back to previous directory/folder.", 0)
             };
         }

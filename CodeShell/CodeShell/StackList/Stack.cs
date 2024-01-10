@@ -22,6 +22,7 @@ namespace CodeShell.StackList
         public void Push(string value)
         {
             ListNode newNode = new ListNode(value, StackNode);
+            newNode.Next = StackNode;
             StackNode = newNode;
         }
 
@@ -36,6 +37,28 @@ namespace CodeShell.StackList
         public string Peek()
         {
             return StackNode.Value;
+        }
+
+        //Print values in the stack
+        public void PrintStack()
+        {
+            ListNode tempStack = StackNode;
+            PrintStackHelper(tempStack);
+
+        }
+
+        //Print helper method
+        //Using the recursive approach to print the last value first
+        private void PrintStackHelper(ListNode tempStack)
+        {
+            if(tempStack.Next == null)
+            {
+                return;
+            }
+
+            //Recursion
+            PrintStackHelper(tempStack.Next);
+            Console.WriteLine(tempStack.Value);
         }
     }
 }

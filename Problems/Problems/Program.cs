@@ -19,6 +19,8 @@ namespace Problems
         static SubstringConcatenation? substringConcatenation;
         static SwapNode? swapNode;
         static FindPosition? findPosition;
+        static CountAndSay? countAndSay;
+        static CombinationSum? combineSum;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -28,7 +30,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            findPosition = new FindPosition();
+            combineSum = new CombinationSum();
         }
     }
 }
