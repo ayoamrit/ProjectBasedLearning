@@ -20,7 +20,12 @@ namespace Problems
         static SwapNode? swapNode;
         static FindPosition? findPosition;
         static CountAndSay? countAndSay;
-        static CombinationSum? combineSum;
+        static FourSum? fourSum;
+        static LongestPalindrome? longestPalindrome;
+        static GreedyJump? greedyJump;
+        static ZigZag? zigZag;
+        static LongestSubsequence? longestSubsequence;
+        static Matrix? matrix;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -30,7 +35,8 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            combineSum = new CombinationSum();
+            matrix = new Matrix();
         }
+
     }
 }
