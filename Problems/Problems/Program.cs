@@ -26,6 +26,7 @@ namespace Problems
         static ZigZag? zigZag;
         static LongestSubsequence? longestSubsequence;
         static Matrix? matrix;
+        static BitCount? bitCount;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -35,7 +36,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            matrix = new Matrix();
+            bitCount = new BitCount();
         }
 
     }

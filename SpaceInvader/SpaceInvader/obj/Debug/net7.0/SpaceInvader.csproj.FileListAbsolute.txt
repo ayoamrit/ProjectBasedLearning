@@ -1,0 +1,14 @@
+D:\C#\SpaceInvader\SpaceInvader\bin\Debug\net7.0\SpaceInvader.exe
+D:\C#\SpaceInvader\SpaceInvader\bin\Debug\net7.0\SpaceInvader.deps.json
+D:\C#\SpaceInvader\SpaceInvader\bin\Debug\net7.0\SpaceInvader.runtimeconfig.json
+D:\C#\SpaceInvader\SpaceInvader\bin\Debug\net7.0\SpaceInvader.dll
+D:\C#\SpaceInvader\SpaceInvader\bin\Debug\net7.0\SpaceInvader.pdb
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\SpaceInvader.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\SpaceInvader.AssemblyInfoInputs.cache
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\SpaceInvader.AssemblyInfo.cs
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\SpaceInvader.csproj.CoreCompileInputs.cache
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\SpaceInvader.dll
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\refint\SpaceInvader.dll
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\SpaceInvader.pdb
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\SpaceInvader.genruntimeconfig.cache
+D:\C#\SpaceInvader\SpaceInvader\obj\Debug\net7.0\ref\SpaceInvader.dll
