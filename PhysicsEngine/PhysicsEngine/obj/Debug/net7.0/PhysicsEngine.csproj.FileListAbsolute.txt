@@ -1,0 +1,14 @@
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\PhysicsEngine.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\PhysicsEngine.AssemblyInfoInputs.cache
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\PhysicsEngine.AssemblyInfo.cs
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\PhysicsEngine.csproj.CoreCompileInputs.cache
+D:\C#\PhysicsEngine\PhysicsEngine\bin\Debug\net7.0\PhysicsEngine.exe
+D:\C#\PhysicsEngine\PhysicsEngine\bin\Debug\net7.0\PhysicsEngine.deps.json
+D:\C#\PhysicsEngine\PhysicsEngine\bin\Debug\net7.0\PhysicsEngine.runtimeconfig.json
+D:\C#\PhysicsEngine\PhysicsEngine\bin\Debug\net7.0\PhysicsEngine.dll
+D:\C#\PhysicsEngine\PhysicsEngine\bin\Debug\net7.0\PhysicsEngine.pdb
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\PhysicsEngine.dll
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\refint\PhysicsEngine.dll
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\PhysicsEngine.pdb
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\PhysicsEngine.genruntimeconfig.cache
+D:\C#\PhysicsEngine\PhysicsEngine\obj\Debug\net7.0\ref\PhysicsEngine.dll
