@@ -27,6 +27,7 @@ namespace Problems
         static LongestSubsequence? longestSubsequence;
         static Matrix? matrix;
         static BitCount? bitCount;
+        static ProcessMillions? processMillions;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -36,7 +37,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            bitCount = new BitCount();
+            processMillions = new ProcessMillions();
         }
 
     }
