@@ -1,0 +1,14 @@
+D:\C#\ThePlayer\ThePlayer\bin\Debug\net7.0\ThePlayer.exe
+D:\C#\ThePlayer\ThePlayer\bin\Debug\net7.0\ThePlayer.deps.json
+D:\C#\ThePlayer\ThePlayer\bin\Debug\net7.0\ThePlayer.runtimeconfig.json
+D:\C#\ThePlayer\ThePlayer\bin\Debug\net7.0\ThePlayer.dll
+D:\C#\ThePlayer\ThePlayer\bin\Debug\net7.0\ThePlayer.pdb
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ThePlayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ThePlayer.AssemblyInfoInputs.cache
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ThePlayer.AssemblyInfo.cs
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ThePlayer.csproj.CoreCompileInputs.cache
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ThePlayer.dll
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\refint\ThePlayer.dll
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ThePlayer.pdb
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ThePlayer.genruntimeconfig.cache
+D:\C#\ThePlayer\ThePlayer\obj\Debug\net7.0\ref\ThePlayer.dll
