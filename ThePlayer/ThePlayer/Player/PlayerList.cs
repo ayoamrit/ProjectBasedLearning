@@ -18,16 +18,17 @@ namespace ThePlayer.Player
 
         private static void ProcessPlayerData()
         {
-
             Players.Add(new PlayerHandler("Executioner", "5ft 6inch", 71.89, new PlayerAttack(5, 11, 13, 21)));
             Players.Add(new PlayerHandler("Dark Knight", "5ft 9inch", 68.12, new PlayerAttack(12, 3, 15, 19)));
+            Players.Add(new PlayerHandler("Defaulter", "4ft 8inch", 41.12, new PlayerAttack(3, 4, 21, 54)));
+            Players.Add(new PlayerHandler("Blender", "6ft 10inch", 120.31, new PlayerAttack(31, 5, 31, 20)));
         }
 
-        public static void ListPlayer()
+        public static void ListPlayers()
         {
             for (int x = 0; x < Players.Count; x++)
             {
-                Console.WriteLine($"*******Player {x}");
+                Console.WriteLine($"*******Player {x+1}");
                 Console.WriteLine($"Player Name: {Players[x].PlayerName}");
                 Console.WriteLine($"Player Height: {Players[x].PlayerHeight}");
                 Console.WriteLine($"Player Weight: {Players[x].PlayerWeight}");

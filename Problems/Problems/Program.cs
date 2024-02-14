@@ -28,6 +28,7 @@ namespace Problems
         static Matrix? matrix;
         static BitCount? bitCount;
         static ProcessMillions? processMillions;
+        static RearrangeArray? rearrangeArray;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -37,7 +38,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            processMillions = new ProcessMillions();
+            rearrangeArray = new RearrangeArray();
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using ThePlayer.Opponent;
+﻿using System.Reflection.Metadata.Ecma335;
+using ThePlayer.Opponent;
 using ThePlayer.Player;
 
 namespace ThePlayer
@@ -13,13 +14,59 @@ namespace ThePlayer
      */
     public class Program
     {
+        private static int selectedPlayerNumber = 0;
+        private static int selectedOpponentNumber = 0;
+
         //Main function
         public static void Main(string[] args)
         {
             PlayerList.InitializePLayers();
             OpponentList.InitializeOpponents();
 
-            PlayerList.ListPlayer();
+            PlayerList.ListPlayers();
+            selectedPlayerNumber = SelectionLoop("Select Player: ");
+            DisplayMessage("You have selected player", PlayerList.Players[selectedPlayerNumber - 1].PlayerName);
+            
+
+            OpponentList.ListOpponents();
+            selectedOpponentNumber = SelectionLoop("Select Opponent: ");
+            DisplayMessage("You have selected opponent", OpponentList.Opponents[selectedOpponentNumber - 1].OpponentName);
+            
+        }
+
+        private static void DisplayMessage(string message, string name)
+        {
+            Console.WriteLine("*************************************");
+            Console.WriteLine($"\n{message}: {name}\n");
+            Console.WriteLine("*************************************");
+        }
+
+        private static bool ValidateIndex(int selectedIndex)
+        {
+            if(selectedIndex > 0 && selectedIndex < 5)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private static int SelectionLoop(string message)
+        {
+            while (true)
+            {
+                Console.Write(message);
+                int selectedNumber = Convert.ToInt32(Console.ReadLine());
+
+                if (ValidateIndex(selectedNumber))
+                {
+                    return selectedNumber;
+                }
+                else
+                {
+                    Console.WriteLine("Your selection is not valid");
+                }
+            }
         }
     }
 }
