@@ -14,26 +14,30 @@ namespace ThePlayer
      */
     public class Program
     {
+        //Declare a variable to store selected number of player and opponent
         private static int selectedPlayerNumber = 0;
         private static int selectedOpponentNumber = 0;
 
         //Main function
         public static void Main(string[] args)
         {
+            //Initialize player and opponent
             PlayerList.InitializePLayers();
             OpponentList.InitializeOpponents();
 
+            //List each player from the list
             PlayerList.ListPlayers();
-            selectedPlayerNumber = SelectionLoop("Select Player: ");
+            selectedPlayerNumber = SelectionLoop("Select Player: ");  //get selected player
             DisplayMessage("You have selected player", PlayerList.Players[selectedPlayerNumber - 1].PlayerName);
             
-
+            //List each opponent from the list
             OpponentList.ListOpponents();
-            selectedOpponentNumber = SelectionLoop("Select Opponent: ");
+            selectedOpponentNumber = SelectionLoop("Select Opponent: ");  //get selected opponent
             DisplayMessage("You have selected opponent", OpponentList.Opponents[selectedOpponentNumber - 1].OpponentName);
             
         }
 
+        //Function to display the selected player and opponent
         private static void DisplayMessage(string message, string name)
         {
             Console.WriteLine("*************************************");
@@ -41,6 +45,7 @@ namespace ThePlayer
             Console.WriteLine("*************************************");
         }
 
+        //Function to check if the selected player exist in the list or not 
         private static bool ValidateIndex(int selectedIndex)
         {
             if(selectedIndex > 0 && selectedIndex < 5)
@@ -48,9 +53,12 @@ namespace ThePlayer
                 return true;
             }
 
+            //return false if the number is in range outside the list
             return false;
         }
 
+
+        //Function to loop through the selection process
         private static int SelectionLoop(string message)
         {
             while (true)
@@ -64,6 +72,7 @@ namespace ThePlayer
                 }
                 else
                 {
+                    //Keep repeating the loop until the right selection has been made by the user 
                     Console.WriteLine("Your selection is not valid");
                 }
             }
