@@ -29,6 +29,7 @@ namespace Problems
         static BitCount? bitCount;
         static ProcessMillions? processMillions;
         static RearrangeArray? rearrangeArray;
+        static BackspaceString? backspaceString;
 
         static BubbleSort? bubbleSort;
         static QuickSort? quickSort;
@@ -38,7 +39,7 @@ namespace Problems
 
         private static void Main(string[] args)
         {
-            rearrangeArray = new RearrangeArray();
+            backspaceString = new BackspaceString();
         }
 
     }
