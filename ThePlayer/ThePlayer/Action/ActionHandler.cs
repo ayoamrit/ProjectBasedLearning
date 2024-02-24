@@ -10,77 +10,135 @@ namespace ThePlayer.Action
 {
     public class ActionHandler
     {
+        //Init object of random class
         private Random random = new Random();
+
+        //Selected player and opponent properties
         private int selectedOpponent { get; set; }
         private int selectedPlayer { get; set; }
-        private int OpponentMaxAttack { get; set; }
 
-        public ActionHandler(int opponentMaxAttack, int selectedPlayer, int selectedOpponent)
+        //Constructor
+        public ActionHandler(int selectedPlayer, int selectedOpponent)
         {
-            this.OpponentMaxAttack = opponentMaxAttack;
+            //Set properties
             this.selectedPlayer = selectedPlayer;
             this.selectedOpponent = selectedOpponent;
         }
 
-        public void PlayerAttack(int attackNumber)
+        /// <summary>
+        /// This function executes player attack
+        /// </summary>
+        /// <param name="attackType">Type of attack the player want to execute</param>
+        public void PlayerAttack(int attackType)
         {
+            //Declare variables
             int attackDamage = 0;
-            string attackType = String.Empty;
-            switch (attackNumber)
+            string attackTypeString = String.Empty;
+
+
+            switch (attackType)
             {
+                //Punch attack
                 case 1:
                     {
+                        //Generate a random number between 0 and the max punch power
                         int playerRandomAttackNumber = random.Next(0, PlayerList.Players[selectedPlayer].PlayerAttackList.Punch);
+
+                        //Set variables
                         attackDamage = playerRandomAttackNumber;
-                        attackType = "Punch";
+                        attackTypeString = "Punch";
+
+                        //Decrease health of the opponent equals to playerRandomAttackNumber
                         DecreaseOpponentPower(playerRandomAttackNumber);
 
+                        //break
                         break;
                     }
+
+                //Kick attack
                 case 2:
                     {
+                        //Generate a random number between 0 and the max kick power
                         int playerRandomAttackNumber = random.Next(0, PlayerList.Players[selectedPlayer].PlayerAttackList.Kick);
+                        
+                        //Set variables
                         attackDamage = playerRandomAttackNumber;
-                        attackType = "Kick";
+                        attackTypeString = "Kick";
+
+                        //Decrease health of the opponent equals to playerRandomAttackNumber
                         DecreaseOpponentPower(playerRandomAttackNumber);
+
+                        //break
                         break;
                     }
+
+                //Throw attack
                 case 3:
                     {
+                        //Generate a random number between 0 and the max throw power
                         int playerRandomAttackNumber = random.Next(0, PlayerList.Players[selectedPlayer].PlayerAttackList.Throw);
+
+                        //Set variables
                         attackDamage = playerRandomAttackNumber;
-                        attackType = "Throw";
+                        attackTypeString = "Throw";
+
+                        //Decrease health of the opponent equals to playerRandomAttackNumber
                         DecreaseOpponentPower(playerRandomAttackNumber);
+
+                        //break
                         break;
                     }
 
             }
 
-            AttackMessage($"Player Name: {PlayerList.Players[selectedPlayer].PlayerName} \t\t\t Attack Type: {attackType} \n Damage Dealt: {attackDamage}");
+            //Write message to show playerName, damageDealt, and attackType
+            AttackMessage($"\nPlayer Name: {PlayerList.Players[selectedPlayer].PlayerName} \t\t\t Attack Type: {attackTypeString} \nDamage Dealt: {attackDamage}");
             
         }
 
+        //Method to decrease the opponent's health
         private void DecreaseOpponentPower(int amount)
         {
             OpponentList.Opponents[selectedOpponent].OpponentAttackList.Power -= amount;
         }
 
+        //method to decrease the player's health
         private void DecreasePlayerPower(int amount)
         {
             PlayerList.Players[selectedPlayer].PlayerAttackList.Power -= amount;
         }
 
+        //Method to write attackMessage on the console
         private void AttackMessage(string message)
         {
             Console.WriteLine(message);
         }
 
+        /// <summary>
+        /// This method executes opponent's attack
+        /// </summary>
         public void OpponentAttack()
         {
-            int attackRandomNumber = random.Next(0, OpponentMaxAttack);
+            //Generate a random number between 0 and the max attack power 
+            int attackRandomNumber = random.Next(0, OpponentList.Opponents[selectedOpponent].OpponentAttackList.Attack);
 
+            //Decrease the player's health equals to attackRandomNumber
             DecreasePlayerPower(attackRandomNumber);
-            AttackMessage($"{OpponentList.Opponents[selectedOpponent].OpponentName} gave {attackRandomNumber} damage to the player");
+
+            //Write message showing opponentName and damageDealt
+            AttackMessage($"\nOpponent Name: {OpponentList.Opponents[selectedOpponent].OpponentName} \t\t\t Damage Dealt: {attackRandomNumber}");
+        }
+
+        //Method to check if health of both the player and the opponent is greater than 0
+        public bool CheckHealth()
+        {
+            if (PlayerList.Players[selectedPlayer].PlayerAttackList.Power >= 0 || OpponentList.Opponents[selectedOpponent].OpponentAttackList.Power >= 0)
+            {
+                return true;
+            }
+
+            //if the health is 0 or less than 0, return false, means that either the player or the opponent has been defeated
+            return false;
         }
     }
 }

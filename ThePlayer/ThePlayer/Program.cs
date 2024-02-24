@@ -1,4 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using ThePlayer.Action;
 using ThePlayer.Opponent;
 using ThePlayer.Player;
 
@@ -18,6 +18,8 @@ namespace ThePlayer
         private static int selectedPlayerNumber = 0;
         private static int selectedOpponentNumber = 0;
 
+        private static ActionHandler? actionHandler;
+
         //Main function
         public static void Main(string[] args)
         {
@@ -28,12 +30,20 @@ namespace ThePlayer
             //List each player from the list
             PlayerList.ListPlayers();
             selectedPlayerNumber = SelectionLoop("Select Player: ");  //get selected player
-            DisplayMessage("You have selected player", PlayerList.Players[selectedPlayerNumber - 1].PlayerName);
+            selectedPlayerNumber--;
+            DisplayMessage("You have selected player", PlayerList.Players[selectedPlayerNumber].PlayerName);
             
             //List each opponent from the list
             OpponentList.ListOpponents();
             selectedOpponentNumber = SelectionLoop("Select Opponent: ");  //get selected opponent
-            DisplayMessage("You have selected opponent", OpponentList.Opponents[selectedOpponentNumber - 1].OpponentName);
+            selectedOpponentNumber--;
+            DisplayMessage("You have selected opponent", OpponentList.Opponents[selectedOpponentNumber].OpponentName);
+
+
+            //Init actionHandler object
+            actionHandler = new ActionHandler(selectedPlayerNumber, selectedOpponentNumber);
+            //Begin the game loop
+            GameLoop();
             
         }
 
@@ -46,9 +56,9 @@ namespace ThePlayer
         }
 
         //Function to check if the selected player exist in the list or not 
-        private static bool ValidateIndex(int selectedIndex)
+        private static bool ValidateIndex(int selectedIndex, int min, int max)
         {
-            if(selectedIndex > 0 && selectedIndex < 5)
+            if(selectedIndex > min && selectedIndex < max)
             {
                 return true;
             }
@@ -66,7 +76,7 @@ namespace ThePlayer
                 Console.Write(message);
                 int selectedNumber = Convert.ToInt32(Console.ReadLine());
 
-                if (ValidateIndex(selectedNumber))
+                if (ValidateIndex(selectedNumber, 0, 5))
                 {
                     return selectedNumber;
                 }
@@ -74,6 +84,54 @@ namespace ThePlayer
                 {
                     //Keep repeating the loop until the right selection has been made by the user 
                     Console.WriteLine("Your selection is not valid");
+                }
+            }
+        }
+
+        private static void GameLoop()
+        {
+            //Continuously loop the game until explicitly broken out of
+            while (true)
+            {
+                //Display player and opponent information
+                Console.WriteLine($"Player: {PlayerList.Players[selectedPlayerNumber].PlayerName} \t\t\t\t Opponent: {OpponentList.Opponents[selectedOpponentNumber].OpponentName}");
+                Console.WriteLine($"Health: {PlayerList.Players[selectedPlayerNumber].PlayerAttackList.Power} \t\t\t\t\t Health: {OpponentList.Opponents[selectedOpponentNumber].OpponentAttackList.Power}");
+
+                //Display attack options for the player
+                Console.WriteLine("Choose your attack: \n1. Punch \n2. Kick \n3. Throw");
+                Console.Write("Player choice: ");
+
+                //Read the player's attack choice
+                int attackChoiceNumber = Convert.ToInt32(Console.ReadLine());
+
+                //Check if the choice of an attack is right 
+                if(!ValidateIndex(attackChoiceNumber, 0, 4))
+                {
+                    //If the attack choice is not valid, continue the loop
+                    continue;
+                }
+
+                //Perform player's attack based on the chosen option
+                Console.WriteLine("*********Player Attack*********");
+                actionHandler.PlayerAttack(attackChoiceNumber);
+                Console.WriteLine("*******************************");
+
+                //Check if the opponent's health is greater than 0
+                if (!actionHandler.CheckHealth())
+                {
+                    Console.WriteLine("You have successfully defeated the opponent \n GAME OVER");
+                    break;
+                }
+
+                //Perform opponent's attack
+                Console.WriteLine("*********Opponent Attack*********");
+                actionHandler.OpponentAttack();
+                Console.WriteLine("*******************************");
+
+                //Check if player's health is greater than 0
+                if (!actionHandler.CheckHealth())
+                {
+                    Console.WriteLine("Your opponent have successfully defeated the player \n GAME OVER");
                 }
             }
         }
