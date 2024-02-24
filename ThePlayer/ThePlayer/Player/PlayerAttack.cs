@@ -11,15 +11,13 @@ namespace ThePlayer.Player
         public int Punch { get; set; }
         public int Kick { get; set; }
         public int Throw { get; set; }
-        public int Defend { get; set; }
-        public static int Power { get; set; }
+        public int Power { get; set; }
 
-        public PlayerAttack(int aPunch, int aKick, int aThrow, int aDefend)
+        public PlayerAttack(int aPunch, int aKick, int aThrow)
         {
             this.Punch = aPunch;
             this.Kick = aKick;
             this.Throw = aThrow;
-            this.Defend = aDefend;
             Power = 100;
         }
     }

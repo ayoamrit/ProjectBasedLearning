@@ -9,7 +9,7 @@ namespace ThePlayer.Opponent
     public class OpponentAttack
     {
         public int Attack { get; set; }
-        public static int Power { get; set; }
+        public int Power { get; set; }
 
         public OpponentAttack(int aAttack)
         {

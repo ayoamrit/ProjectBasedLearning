@@ -18,10 +18,10 @@ namespace ThePlayer.Player
 
         private static void ProcessPlayerData()
         {
-            Players.Add(new PlayerHandler("Executioner", "5ft 6inch", 71.89, new PlayerAttack(5, 11, 13, 21)));
-            Players.Add(new PlayerHandler("Dark Knight", "5ft 9inch", 68.12, new PlayerAttack(12, 3, 15, 19)));
-            Players.Add(new PlayerHandler("Defaulter", "4ft 8inch", 41.12, new PlayerAttack(3, 4, 21, 54)));
-            Players.Add(new PlayerHandler("Blender", "6ft 10inch", 120.31, new PlayerAttack(31, 5, 31, 20)));
+            Players.Add(new PlayerHandler("Executioner", "5ft 6inch", 71.89, new PlayerAttack(5, 11, 13)));
+            Players.Add(new PlayerHandler("Dark Knight", "5ft 9inch", 68.12, new PlayerAttack(12, 3, 15)));
+            Players.Add(new PlayerHandler("Defaulter", "4ft 8inch", 41.12, new PlayerAttack(3, 4, 21)));
+            Players.Add(new PlayerHandler("Blender", "6ft 10inch", 120.31, new PlayerAttack(31, 5, 31)));
         }
 
         public static void ListPlayers()
@@ -37,7 +37,6 @@ namespace ThePlayer.Player
                 Console.WriteLine($"Punch: {Players[x].PlayerAttackList.Punch}");
                 Console.WriteLine($"Kick: {Players[x].PlayerAttackList.Kick}");
                 Console.WriteLine($"Punch: {Players[x].PlayerAttackList.Punch}");
-                Console.WriteLine($"Defend: {Players[x].PlayerAttackList.Defend}");
 
                 //Leave a line for better formatting
                 Console.WriteLine();
