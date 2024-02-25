@@ -1,0 +1,14 @@
+D:\C#\ChessQueen\ChessQueen\bin\Debug\net7.0\ChessQueen.exe
+D:\C#\ChessQueen\ChessQueen\bin\Debug\net7.0\ChessQueen.deps.json
+D:\C#\ChessQueen\ChessQueen\bin\Debug\net7.0\ChessQueen.runtimeconfig.json
+D:\C#\ChessQueen\ChessQueen\bin\Debug\net7.0\ChessQueen.dll
+D:\C#\ChessQueen\ChessQueen\bin\Debug\net7.0\ChessQueen.pdb
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ChessQueen.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ChessQueen.AssemblyInfoInputs.cache
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ChessQueen.AssemblyInfo.cs
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ChessQueen.csproj.CoreCompileInputs.cache
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ChessQueen.dll
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\refint\ChessQueen.dll
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ChessQueen.pdb
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ChessQueen.genruntimeconfig.cache
+D:\C#\ChessQueen\ChessQueen\obj\Debug\net7.0\ref\ChessQueen.dll
