@@ -7,23 +7,35 @@ namespace ChessQueen
     //All the moves are represented by number 1, # represents queens on the board
     public class Program
     {
-        private static Moves queenMoves = new Moves();
 
         static void Main(string[] args)
         {
-            queenMoves.StraightDown();
-            queenMoves.StraightUp();
+            
+            //Call constructor to check for all possible moves
+            new Moves();
 
-
-            //Display the board without showing moves that the queen could take
+            //Print entire board 
             BoardHandler.Board.DisplayBoard();
 
-            ValidMoves();
+            //Print the kill list if there's a piece that could be terminated form that location
+            PrintKillList();
         }
 
-        private static void ValidMoves()
+        private static void PrintKillList()
         {
+            if(Moves.KillList.Count <= 0)
+            {
+                Console.WriteLine("No piece can be executed from this location");
+                return;
+            }
 
+            int serialNumber = 1;
+            foreach(var list in Moves.KillList)
+            {
+                Console.WriteLine($"{serialNumber}. Piece Position: xAxis => {list.XAxis} & yAxis => {list.YAxis}");
+                Console.WriteLine($"    Piece Symbol:{list.Symbol}");
+                Console.WriteLine($"    Message: {list.Message}");
+            }
         }
     }
 }
