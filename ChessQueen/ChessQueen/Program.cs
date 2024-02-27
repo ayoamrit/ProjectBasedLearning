@@ -10,7 +10,7 @@ namespace ChessQueen
 
         static void Main(string[] args)
         {
-            
+
             //Call constructor to check for all possible moves
             new Moves();
 
@@ -19,7 +19,10 @@ namespace ChessQueen
 
             //Print the kill list if there's a piece that could be terminated form that location
             PrintKillList();
+
+
         }
+
 
         private static void PrintKillList()
         {
