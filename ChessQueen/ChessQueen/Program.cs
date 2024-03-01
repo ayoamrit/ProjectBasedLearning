@@ -20,7 +20,6 @@ namespace ChessQueen
             //Print the kill list if there's a piece that could be terminated form that location
             PrintKillList();
 
-
         }
 
 

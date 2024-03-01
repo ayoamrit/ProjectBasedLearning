@@ -13,7 +13,7 @@ namespace ChessQueen.BoardHandler
 
         public static int QueenX = 5;
         public static int QueenY = 5;
-
+        
         private static readonly char[] Alphabets = new char[10] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J' };
 
         public static string[,] ChessBoard = new string[ROW, COLUMN]

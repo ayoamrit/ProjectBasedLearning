@@ -1,0 +1,14 @@
+D:\C#\FolderMonitor\FolderMonitor\bin\Debug\net7.0\FolderMonitor.exe
+D:\C#\FolderMonitor\FolderMonitor\bin\Debug\net7.0\FolderMonitor.deps.json
+D:\C#\FolderMonitor\FolderMonitor\bin\Debug\net7.0\FolderMonitor.runtimeconfig.json
+D:\C#\FolderMonitor\FolderMonitor\bin\Debug\net7.0\FolderMonitor.dll
+D:\C#\FolderMonitor\FolderMonitor\bin\Debug\net7.0\FolderMonitor.pdb
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.AssemblyInfoInputs.cache
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.AssemblyInfo.cs
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.csproj.CoreCompileInputs.cache
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.dll
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\refint\FolderMonitor.dll
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.pdb
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.genruntimeconfig.cache
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\ref\FolderMonitor.dll
