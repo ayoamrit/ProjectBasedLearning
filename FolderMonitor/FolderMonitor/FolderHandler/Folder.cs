@@ -23,6 +23,7 @@ namespace FolderMonitor.FolderHandler
             List = new List<string>();
         }
 
+        //Method to list folderPaths
         public static void ShowFolderList()
         {
             int serialNumber = 1;
@@ -30,14 +31,25 @@ namespace FolderMonitor.FolderHandler
             {
                 Console.WriteLine($"{serialNumber++}. {folderPath}");
             }
+
+            Console.WriteLine();  //Leave a line for better formatting
         }
 
+        //Method to insert folderPath to the list
         public static void InsertPathToList(string? folderPath)
         {
 
+            //Check if the folderPath is empty or null
             if (String.IsNullOrEmpty(folderPath))
             {
                 Console.WriteLine("'Empty value caught': Enter a value to proceed");
+                return;
+            }
+
+            //Check if the folderPath already exists in the list or not
+            if (List.Contains(folderPath))
+            {
+                Console.WriteLine($"{folderPath}: Path mentioned already exists in the list of paths");
                 return;
             }
 

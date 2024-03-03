@@ -28,37 +28,53 @@ namespace FolderMonitor
 
             while (true)
             {
-                StartPrompt();
-                int userChoice = Convert.ToInt32(Console.ReadLine());
-
-                if (ValidateChoice(userChoice))
+                try
                 {
-                    switch (userChoice)
+                    StartPrompt();
+                    int userChoice = Convert.ToInt32(Console.ReadLine());
+
+                    if (ValidateChoice(userChoice))
                     {
-                        case 1:
-                            {
-                                Console.WriteLine();  //Leave a line for better formatting
+                        switch (userChoice)
+                        {
+                            case 1:
+                                {
+                                    Console.WriteLine();  //Leave a line for better formatting
 
-                                Console.Write("Enter the folder path: ");
-                                string? folderPath = Console.ReadLine();
+                                    Console.Write("Enter the folder path: ");
+                                    string? folderPath = Console.ReadLine();
 
-                                FolderHandler.Folder.InsertPathToList(folderPath);
+                                    FolderHandler.Folder.InsertPathToList(folderPath);
 
-                                break;
-                            }
-                        case 2:
-                            {
-                                FolderHandler.Folder.ShowFolderList();
-                                break;
-                            }
-                        case 3: StartProcess();  break;
-                        case 4:
-                            {
-                                _write.SaveContent();
-                                break;
-                            }
-                        case 5: Environment.Exit(0); break;
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    FolderHandler.Folder.ShowFolderList();
+                                    break;
+                                }
+                            case 3: ProcessHandler.Process.Begin(); break;
+                            case 4:
+                                {
+                                    _write.SaveContent();
+                                    break;
+                                }
+                            case 5: Environment.Exit(0); break;
+                        }
+
                     }
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Input Format Exception: The format that you used for the input is incorrect.\nUse a valid format and continue\n");
+                }
+                catch(ExceptionHandler.WriterException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                catch(Exception)
+                {
+                    Console.WriteLine("Error occurred: An unexpected error occurred during the execution of the program\n");
                 }
             }
        }
@@ -73,15 +89,10 @@ namespace FolderMonitor
             Console.Write("Your choice: ");
         }
 
+        //Method to check if the user's choice is valid or not 
         private static bool ValidateChoice(int choice)
         {
             return (choice > 0 && choice < 6);
-        }
-
-
-        private static void StartProcess()
-        {
-
         }
     }
 }
