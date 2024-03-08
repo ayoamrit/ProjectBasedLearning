@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uftPZRHwl7GFp4oDu3ABjSOk4HJFIpQLo6rY0ZEBTbVonTK2uu1YzDmonzDENplLsztn/HqRjidUP7GSeMlgew==",
+  "dgSpecHash": "l1R1XBYxLXD2eSHyzOU7BjoCVNNifqKTgPwzlDP9WNXX9M+p7yHe3onL+UXj/LSQN6qkJKgP8zYIPpwSs0YU9Q==",
   "success": true,
   "projectFilePath": "D:\\C#\\FolderMonitor\\FolderMonitor\\FolderMonitor.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\AMRIT\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\7.0.0\\microsoft.toolkit.uwp.notifications.7.0.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

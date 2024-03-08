@@ -12,3 +12,6 @@ D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\refint\FolderMonitor.dll
 D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.pdb
 D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.genruntimeconfig.cache
 D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\ref\FolderMonitor.dll
+D:\C#\FolderMonitor\FolderMonitor\bin\Debug\net7.0\Microsoft.Toolkit.Uwp.Notifications.dll
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.csproj.AssemblyReference.cache
+D:\C#\FolderMonitor\FolderMonitor\obj\Debug\net7.0\FolderMonitor.csproj.CopyComplete

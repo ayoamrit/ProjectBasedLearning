@@ -21,6 +21,30 @@ namespace FolderMonitor.ProcessHandler
         {
             IList<int> FilesList = new List<int>();
 
+            for(int x = 0; x < FolderHandler.Folder.List.Count; x++)
+            {
+                int currentCount = Directory.GetFiles(FolderHandler.Folder.List[x], "*",SearchOption.TopDirectoryOnly).Length;
+
+                FilesList.Add(currentCount);
+            }
+
+            int pointer = 0;
+            while (true)
+            {
+                int currentCount = Directory.GetFiles(FolderHandler.Folder.List[pointer], "*", SearchOption.TopDirectoryOnly).Length;
+
+                if(currentCount > FilesList[pointer])
+                {
+                    FilesList[pointer] = currentCount;
+                    new ToastHandler.Toast("New file has been added to the folder", FolderHandler.Folder.List[pointer]);
+                }
+
+                if(pointer == FolderHandler.Folder.List.Count - 1)
+                {
+                    pointer = 0;
+                }
+            }
+
         }
 
         private static void Message(Thread processThread)
@@ -33,6 +57,7 @@ namespace FolderMonitor.ProcessHandler
                 for(int x = 0; x < 3; x++)
                 {
                     Console.Write(".");
+                    Thread.Sleep(5000);
                 }
             }
         }
