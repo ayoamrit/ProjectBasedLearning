@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "l1R1XBYxLXD2eSHyzOU7BjoCVNNifqKTgPwzlDP9WNXX9M+p7yHe3onL+UXj/LSQN6qkJKgP8zYIPpwSs0YU9Q==",
+  "dgSpecHash": "8lZyZXCSphzeYuc32cfGRYvPEmYPn4mI1h8Oc04vXS8IRk0SXSLimV+M6pKbEK73mIyjqAQETzp5Ccm6NnW6jA==",
   "success": true,
   "projectFilePath": "D:\\C#\\FolderMonitor\\FolderMonitor\\FolderMonitor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AMRIT\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\AMRIT\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\7.0.0\\microsoft.toolkit.uwp.notifications.7.0.0.nupkg.sha512",
-    "C:\\Users\\AMRIT\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\AMRIT\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\AMRIT\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.29\\microsoft.windows.sdk.net.ref.10.0.22000.29.nupkg.sha512"
   ],
   "logs": []
 }

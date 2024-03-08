@@ -9,13 +9,15 @@ namespace FolderMonitor.ToastHandler
 {
     public class Toast
     {
-        public Toast(string message, string folderPath)
+        //Constructor for the Toast class
+        public Toast(string heading, string message, string folderPath)
         {
-            var builder = new ToastContentBuilder()
-            .AddArgument("meetingId", 9813)
-            .AddText("Adaptive Tiles Meeting", hintMaxLines: 1)
-            .AddText("Conf Room 2001 / Building 135")
-            .AddText("10:00 AM - 10:30 AM");
+            //Create a new toast notification using ToastContentBuilder from Microsoft.Toolkit.Uwp.Notifications
+            new ToastContentBuilder()
+            .AddText($"{heading}", hintMaxLines: 1)  //Heading text
+            .AddText($"Directory Path: {folderPath}")  //Directory path
+            .AddText($"{message}")  //Message text
+            .Show();  //Display the toast notification
         }
     }
 }
