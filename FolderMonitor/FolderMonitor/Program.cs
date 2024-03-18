@@ -26,43 +26,52 @@ namespace FolderMonitor
                 Console.WriteLine("There are no folder paths found to monitor. Add Paths to get things going.....");
             }
 
+            //Main program loop
             while (true)
             {
                 try
                 {
+                    //Display the user prompt
                     StartPrompt();
                     int userChoice = Convert.ToInt32(Console.ReadLine());
 
                     if (ValidateChoice(userChoice))
                     {
+                        //Process user choice
                         switch (userChoice)
                         {
+                            //Add new folder to monitor
                             case 1:
                                 {
                                     Console.WriteLine();  //Leave a line for better formatting
 
                                     Console.Write("Enter the folder path: ");
-                                    string? folderPath = Console.ReadLine();
+                                    string? folderPath = Console.ReadLine();  //Read folder path from user input
 
-                                    FolderHandler.Folder.InsertPathToList(folderPath);
+                                    FolderHandler.Folder.InsertPathToList(folderPath);  //Insert folder path to list
 
                                     break;
                                 }
-                            case 2:
+                            case 2:  //Show folders path
                                 {
+                                    //Display list of monitored folder path
                                     FolderHandler.Folder.ShowFolderList();
                                     break;
                                 }
-                            case 3: ProcessHandler.Process.Begin(); break;
-                            case 4:
+                            case 3: ProcessHandler.Process.Begin(); break;  //Begin the process to monitor paths
+                            case 4:  //Save
                                 {
-                                    _write.SaveContent();
+                                    _write.SaveContent();  //Save content to file
                                     break;
                                 }
-                            case 5: Environment.Exit(0); break;
+                            case 5: Environment.Exit(0); break;  //Terminate program
                         }
 
                     }
+                }
+                catch (ExceptionHandler.ToastException ex)
+                {
+                    Console.WriteLine(ex.Message);
                 }
                 catch (FormatException)
                 {
